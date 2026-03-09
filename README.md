@@ -5,6 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/btafoya/3cx-voip-system)](https://github.com/btafoya/3cx-voip-system/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Format-green)](https://agentskills.io/what-are-skills)
+[![Skills CLI](https://img.shields.io/badge/Install-npx%20skills-blue)](https://skills.sh/)
 
 > An AI agent skill for 3CX IP PBX administration and configuration. Extends AI agents with specialized knowledge for managing VoIP telephony systems.
 
@@ -14,7 +15,9 @@
 
 Agent Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. This repository provides a **3CX VoIP skill** that enables AI assistants to help with 3CX IP PBX administration tasks.
 
-Learn more about agent skills at [agentskills.io](https://agentskills.io/what-are-skills).
+- Learn more about agent skills at [agentskills.io](https://agentskills.io/what-are-skills)
+- Discover and install more skills at [skills.sh](https://skills.sh/)
+- View the Skills CLI source code at [vercel-labs/skills](https://github.com/vercel-labs/skills)
 
 ---
 
@@ -66,7 +69,32 @@ The skill file contains:
 
 ## Installation
 
-### Using with Claude Code
+### Quick Install with Skills CLI (Recommended)
+
+The easiest way to install this skill is using the [Skills CLI](https://skills.sh/). This tool automatically installs skills to your preferred AI agent (Claude Code, Cursor, GitHub Copilot, etc.).
+
+```bash
+# Install this skill for your current project
+npx skills add btafoya/3cx-voip-system
+
+# Install globally (available across all projects)
+npx skills add btafoya/3cx-voip-system -g
+
+# Install for a specific agent
+npx skills add btafoya/3cx-voip-system -a claude-code
+
+# Non-interactive installation (skip prompts)
+npx skills add btafoya/3cx-voip-system -y
+
+# List available skills in this repository
+npx skills add btafoya/3cx-voip-system --list
+```
+
+The Skills CLI supports 40+ AI agents and handles automatic detection of supported agents on your system. Visit [skills.sh](https://skills.sh/) to discover more agent skills.
+
+### Manual Installation (Alternative)
+
+#### Using with Claude Code
 
 1. Clone this repository to your local machine:
    ```bash
@@ -80,7 +108,7 @@ The skill file contains:
 
 3. Restart Claude Code. The skill will be automatically loaded when relevant tasks are mentioned.
 
-### Using with Other Agent Frameworks
+#### Using with Other Agent Frameworks
 
 The skill follows the [Agent Skills specification](https://agentskills.io/specification). To use with compatible agents:
 
