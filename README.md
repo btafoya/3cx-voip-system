@@ -1,17 +1,56 @@
-# 3CX VoIP System - Documentation & Knowledge Base
+# 3CX VoIP System - Agent Skill
 
 [![GitHub Stars](https://img.shields.io/github/stars/btafoya/3cx-voip-system?style=social)](https://github.com/btafoya/3cx-voip-system/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/btafoya/3cx-voip-system?style=social)](https://github.com/btafoya/3cx-voip-system/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/btafoya/3cx-voip-system)](https://github.com/btafoya/3cx-voip-system/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Format-green)](https://agentskills.io/what-are-skills)
 
-> A comprehensive documentation and knowledge base for 3CX IP PBX administration and configuration.
+> An AI agent skill for 3CX IP PBX administration and configuration. Extends AI agents with specialized knowledge for managing VoIP telephony systems.
+
+---
+
+## What is an Agent Skill?
+
+Agent Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. This repository provides a **3CX VoIP skill** that enables AI assistants to help with 3CX IP PBX administration tasks.
+
+Learn more about agent skills at [agentskills.io](https://agentskills.io/what-are-skills).
 
 ---
 
 ## Overview
 
-This repository serves as a centralized documentation hub for [3CX VoIP system](https://www.3cx.com/) administrators. It includes a comprehensive skill file for Claude Code, bulk import templates, and organized reference materials for managing VoIP telephony systems.
+This repository provides a comprehensive agent skill for [3CX VoIP system](https://www.3cx.com/) administration. The skill includes:
+
+- **`SKILL.md`** – Core instructions for AI agents on 3CX configuration and troubleshooting
+- **Bulk import templates** – CSV templates for adding users, extensions, and configuration in bulk
+- **Reference materials** – Organized documentation for common VoIP telephony tasks
+- **3CX documentation** – Official 3CX HTML documentation for reference
+
+## Skill Structure
+
+The skill follows the Agent Skills format with progressive disclosure for efficient context management:
+
+```
+.claude/plugins/3cx-voip-system/
+├── SKILL.md              # Core skill file with instructions and metadata
+└── (referenced files)    # Templates, documentation, and resources
+```
+
+### SKILL.md Format
+
+The skill file contains:
+
+- **Frontmatter** – YAML metadata (`name`, `description`)
+- **Instructions** – Step-by-step guidance for AI agents
+- **Task Coverage** – When and how to use the skill
+- **Reference Links** – Links to additional resources and files
+
+### How Agents Use This Skill
+
+1. **Discovery** – Agents load the skill name and description at startup
+2. **Activation** – When a 3CX-related task is mentioned, the full skill instructions are loaded
+3. **Execution** – The agent follows the instructions, loading referenced files as needed
 
 ### What is 3CX?
 
@@ -25,7 +64,43 @@ This repository serves as a centralized documentation hub for [3CX VoIP system](
 
 ---
 
+## Installation
+
+### Using with Claude Code
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/btafoya/3cx-voip-system.git
+   ```
+
+2. Copy the skill directory to your Claude Code plugins:
+   ```bash
+   cp -r 3cx-voip-system/.claude/plugins/3cx-voip-system ~/.claude/plugins/
+   ```
+
+3. Restart Claude Code. The skill will be automatically loaded when relevant tasks are mentioned.
+
+### Using with Other Agent Frameworks
+
+The skill follows the [Agent Skills specification](https://agentskills.io/specification). To use with compatible agents:
+
+- Copy the `SKILL.md` file and any referenced assets
+- Follow your agent's skill loading procedure
+- The skill will be activated when tasks related to 3CX, VoIP, or telephony are mentioned
+
+---
+
 ## Quick Start
+
+### How the Skill Works
+
+When you ask about 3CX-related tasks, the AI agent automatically activates this skill and loads the relevant instructions. Examples:
+
+- "Help me add a new user extension"
+- "Set up a call queue for sales"
+- "Configure an IVR menu"
+- "Import users from a CSV file"
+- "Troubleshoot call quality issues"
 
 ### Common Tasks
 
@@ -45,10 +120,12 @@ This repository serves as a centralized documentation hub for [3CX VoIP system](
 
 ## License
 
-This project contains:
-- Custom documentation and knowledge base (MIT License)
-- Official 3CX documentation (copyright 3CX)(https://www.3cx.com/docs/)
-- Skill file for Claude Code integration
+This project is distributed under the **MIT License**. The repository contains:
+
+- **Agent Skill** – Custom instructions for AI agents (MIT License)
+- **Knowledge Base** – Documentation and reference materials (MIT License)
+- **Templates** – CSV import templates (MIT License)
+- **Official 3CX Documentation** – Copyright 3CX, reproduced for reference purposes (https://www.3cx.com/docs/)
 
 ---
 
