@@ -988,3 +988,25 @@ DN Type codes:
 - 2 = Ring Group/Queue
 - 5 = Voicemail
 - 13 = Inbound Routing
+
+---
+
+## File Locations
+
+| File | Location |
+|------|----------|
+| Main 3CX log file | `/var/lib/3cxpbx/Bin/3CXPhoneSystem.log` |
+| CSV import template | `3cx-documentation/ImportExtensionTemplateV20.csv` |
+| Official 3CX HTML docs | `3cx-documentation/*.html` |
+| Project index | `PROJECT_INDEX.md` |
+| Knowledge base | `KNOWLEDGE_BASE.md` |
+
+---
+
+## Related Documentation
+
+- [3CX Official Website](https://www.3cx.com/)
+- [3CX Documentation Portal](https://www.3cx.com/docs/)
+- [Project Index](PROJECT_INDEX.md)
+- [Knowledge Base](KNOWLEDGE_BASE.md)
+- [README](README.md)
