@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository serves as a centralized documentation hub for 3CX VoIP system administrators. It includes official 3CX documentation, a comprehensive skill file for Claude Code, bulk import templates, and organized reference materials for managing VoIP telephony systems.
+This repository serves as a centralized documentation hub for [3CX VoIP system](https://www.3cx.com/) administrators. It includes a comprehensive skill file for Claude Code, bulk import templates, and organized reference materials for managing VoIP telephony systems.
 
 ### What is 3CX?
 
@@ -47,7 +47,7 @@ This repository serves as a centralized documentation hub for 3CX VoIP system ad
 
 This project contains:
 - Custom documentation and knowledge base (MIT License)
-- Official 3CX documentation (copyright 3CX)
+- Official 3CX documentation (copyright 3CX)(https://www.3cx.com/docs/)
 - Skill file for Claude Code integration
 
 ---
